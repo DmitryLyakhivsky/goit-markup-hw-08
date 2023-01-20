@@ -4,16 +4,6 @@
     &__container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-
-        @media screen and (min-width: 768px) {
-                max-width: 768px;
-        }
-        
-        @media screen and (min-width: 1200px) {
-                max-width: 1200px;
-        
-        }
     }
 
     &__nav {
@@ -22,14 +12,8 @@
     }
 
     &__logo {
-        padding-top: 16px;
-        padding-bottom: 16px;
-
-        @media screen and (min-width: 1200px) {
-            padding-top: 24px;
-            padding-bottom: 25px;
-            font-size: 26px;
-        }
+        padding-top: 24px;
+        padding-bottom: 25px;
 
         &--black {
             color: $secondary-black-color;
@@ -42,25 +26,13 @@
     display: flex;
     margin-left: 93px;
 
-    @media screen and (max-width: 767px) {
-            display: none;
-        }
-
     &__item--current {
         color: $accent-color;
     }
 
-    &__item:nth-child(1) {
-         margin-right: 51px;
-    
-     @media screen and (min-width: 1200px) {
-         margin-right: 53px;
-        }
-    }
-    
-    &__item:nth-child(2) {
+    &__item:not(:last-child) {
         margin-right: 50px;
-         }
+    }
 
     &__link {
         position: relative;
@@ -100,26 +72,9 @@
     display: flex;
     margin-left: auto;
 
-    @media screen and (max-width: 767px) {
-        display: none;
-        }
-    
-    @media screen and (min-width: 768px) {
-        flex-direction: column;
-        }
-    
-    @media screen and (min-width: 1200px) {
-        flex-direction: row;
-        }
-    
     &__item:not(:last-child) {
-        margin-right: 30px;
-    
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-right: 0;
-        margin-bottom: 10px;
-        }
-        }
+        margin-right: 50px;
+    }
 
     &__link {
         display: inline-flex;
@@ -130,11 +85,6 @@
         padding-top: 32px;
         padding-bottom: 32px;
 
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            padding-top: 0;
-            padding-bottom: 0;
-        }
-
         transition: color $time $transition-cubic;
 
         &:hover,
@@ -144,32 +94,18 @@
     }
 
     &__envelope {
-        width: 14px;
-        height: 10px;
-        fill: currentColor;
-
-        @media screen and (min-width: 1200px) {
         width: 16px;
         height: 12px;
-        }
+        fill: currentColor;
     }
 
     &__smartphone {
         width: 10px;
-        height: 14px;
-        fill: currentColor;
-
-    @media screen and (min-width: 1200px) {
-        width: 10px;
         height: 16px;
-        }
+        fill: currentColor;
     }
 
     &__icon--right {
-        margin-right: 8px;
-
-    @media screen and (min-width: 1200px) {
         margin-right: 10px;
-        }
     }
 }
