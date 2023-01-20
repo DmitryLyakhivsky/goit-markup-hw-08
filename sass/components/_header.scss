@@ -73,11 +73,11 @@
     display: flex;
     margin-left: auto;
 
-    &__item:not(:last-child) {
+&__item:not(:last-child) {
         margin-right: 50px;
     }
 
-    &__link {
+&__link {
         display: inline-flex;
         align-items: center;
         font-weight: 500;
@@ -88,25 +88,25 @@
 
         transition: color $time $transition-cubic;
 
-        &:hover,
-        &:focus {
+&:hover,
+&:focus {
             color: $accent-color;
         }
     }
 
-    &__envelope {
+&__envelope {
         width: 16px;
         height: 12px;
         fill: currentColor;
     }
 
-    &__smartphone {
+&__smartphone {
         width: 10px;
         height: 16px;
         fill: currentColor;
     }
 
-    &__icon--right {
+&__icon--right {
         margin-right: 10px;
     }
 }
