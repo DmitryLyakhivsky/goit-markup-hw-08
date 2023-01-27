@@ -1,66 +1,66 @@
 .hero {
-        padding-top: 118px;
-        padding-bottom: 118px;
-        text-align: center;
-        background-color: $hero-overlay-color;
-        color: $primary-white-color;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+    background-color: $hero-overlay-color;
+    color: $primary-white-color;
 
-        max-width: 480px;
-        margin-left: auto;
-        margin-right: auto;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
 
-    
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("");
+        url("/images/headerimg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
         background-image: linear-gradient(to right,
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-        url("");
-        }
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("/images/header768img@2x.jpg");
+    }
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
         background-image: linear-gradient(to right,
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-        url("");
-        
-    @media screen and (min-device-pixel-ratio: 2),
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("/images/header768img.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right,
+            background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-        url("");
-                    }
+                url("/images/header768img@2x.jpg");
+        }
     }
 
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
         padding-bottom: 200px;
         max-width: 1600px;
-    
+
         background-image: linear-gradient(to right,
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-        url("");
-    
-    @media screen and (min-device-pixel-ratio: 2),
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("/images/Img\ 1200.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right,
+            background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-        url("");
-            }
+                url("/images/Img\ 1200@2x.jpg");
         }
+    }
 
     &__title {
         margin-bottom: 30px;
@@ -74,10 +74,10 @@
         text-transform: uppercase;
 
         @media screen and (min-width: 1200px) {
-        max-width: 696px;
-        font-size: 44px;
-        line-height: 1.36;
-            }
+            max-width: 696px;
+            font-size: 44px;
+            line-height: 1.36;
+        }
     }
 
     &__btn {
@@ -94,9 +94,9 @@
         border: transparent;
 
         @media screen and (min-width: 1200px) {
-        padding-left: 32px;
-        padding-right: 32px;
-            }
+            padding-left: 32px;
+            padding-right: 32px;
+        }
 
         font-weight: 700;
         font-size: 16px;
